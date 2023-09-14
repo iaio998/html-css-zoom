@@ -20,15 +20,31 @@
   max-width: 1600px;
   margin: 0 auto;
 }
-
+ul {
+  list-style: none;
+}
 /* Flex  */
-
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.go-right {
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+.center {
+}
+.gap {
+  gap: 10px;
+}
 /* Website */
 body {
   background-color: var(--main-color);
 }
 header {
-  background-color: var(--main-color);
+  background-color: red;
+  width: 100vw;
+  height: 5vh;
 }
 main {
   background-color: var(--main-color);
