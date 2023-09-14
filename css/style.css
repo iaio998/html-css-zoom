@@ -1,0 +1,38 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+:root {
+  --main-color: #000000;
+  --footer-color: #222222;
+  --buttons-color: #4a4a4a;
+  --second-txt-color: #e21a14;
+  --addictional-color: #4bc800;
+}
+.debug {
+  border: 1px solid black;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Flex  */
+
+/* Website */
+body {
+  background-color: var(--main-color);
+}
+header {
+  background-color: var(--main-color);
+}
+main {
+  background-color: var(--main-color);
+}
+footer {
+  background-color: var(--footer-color);
+}
