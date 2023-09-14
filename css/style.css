@@ -14,7 +14,7 @@
   --addictional-color: #4bc800;
 }
 .debug {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 .container {
   max-width: 1600px;
@@ -27,15 +27,23 @@ ul {
 .flex {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 .go-right {
   justify-content: flex-end;
   justify-items: flex-end;
 }
 .center {
+  align-items: center;
 }
-.gap {
-  gap: 10px;
+.sp-between {
+  justify-content: space-between;
+}
+.gap1 {
+  gap: 15px;
+}
+.gap2 {
+  gap: 50px;
 }
 /* Website */
 body {
@@ -45,10 +53,30 @@ header {
   background-color: red;
   width: 100vw;
   height: 5vh;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 main {
   background-color: var(--main-color);
+  padding-top: 5vh;
 }
 footer {
   background-color: var(--footer-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  padding: 10px;
+}
+.function {
+  font-size: xx-large;
+}
+.lower {
+  font-size: small;
+}
+.green {
+  color: var(--addictional-color);
 }
