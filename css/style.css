@@ -13,12 +13,12 @@
   --second-txt-color: #e21a14;
   --addictional-color: #4bc800;
 }
-.debug {
-  border: 1px solid white;
-}
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
+/* .debug {
+  background-color: aquamarine;
+} */
+.wrapper {
+  width: 100%;
+  height: 100vh;
 }
 ul {
   list-style: none;
@@ -29,6 +29,9 @@ ul {
   flex-flow: row nowrap;
   justify-content: center;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 .go-right {
   justify-content: flex-end;
   justify-items: flex-end;
@@ -38,6 +41,9 @@ ul {
 }
 .sp-between {
   justify-content: space-between;
+}
+.sp-evenly {
+  justify-content: space-evenly;
 }
 .gap1 {
   gap: 15px;
@@ -50,25 +56,23 @@ body {
   background-color: var(--main-color);
 }
 header {
-  background-color: red;
-  width: 100vw;
-  height: 5vh;
+  background-color: black;
+  width: 100%;
+  height: 50px;
   padding: 5px;
-  position: fixed;
-  top: 0;
-  right: 0;
 }
 main {
   background-color: var(--main-color);
-  padding-top: 5vh;
+  overflow-y: scroll;
+  height: calc(100vh - 140px);
 }
 footer {
   background-color: var(--footer-color);
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  height: 8vh;
+  width: 100%;
+  height: 90px;
   padding: 10px;
 }
 .function {
@@ -79,4 +83,34 @@ footer {
 }
 .green {
   color: var(--addictional-color);
+}
+.box-video {
+  width: calc(100% / 6 - 15px);
+  height: calc(100vw / 6 - 15px);
+  margin: 15px;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.name-user {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.button1 {
+  color: white;
+  background-color: #4a4a4a;
+  padding: 5px;
+}
+.button2 {
+  color: red;
+  background-color: #4a4a4a;
+  padding: 15px;
 }
